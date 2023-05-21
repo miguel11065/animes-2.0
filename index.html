@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animes 2.0</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        .botao {
+            margin: 0 0 10px 10px;
+        }
+
+        .col-md-4, .text-bg-dark {  
+            margin-top: 20px;
+            height: 470px;
+        }
+
+        footer {
+            background-color: rgba(33, 37, 41, 1);
+            color: #ecf0f1;
+            padding: 1px;
+            font-size: 20px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .carousel-caption > h2 {
+            background-color: rgba(0, 0, 0, 0.336);
+        }
+    </style>
+
+</head>
+<body>
+    <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+                <img class="d-block w-100" src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/08/one-piece-banner.jpg?w=774&ssl=1">
+                <div class="carousel-caption">
+                    <h2>One Piece</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/08/demon-slayer-kny-banner.jpg?w=774&ssl=1">
+                <div class="carousel-caption">
+                    <h2>Demon Slayer</h2>
+                </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+                <img class="d-block w-100" src="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2021/08/shingeki-banner.jpg?w=774&ssl=1">
+                <div class="carousel-caption">
+                    <h2>Attack on Titan</h2>
+                </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/jujutsu.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">JUJUTSU KAISEN GANHA NOVO TRAILER</h4>
+                        <h5 class="card-subtitle">O anime estreia em julho</h5>
+                        
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/hero.png">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">BOKU NO HERO TERÁ UMA SÉTIMA TEMPORADA</h4>
+                        <h5 class="card-subtitle">A nova temporada foi confirmada após final da 6ª temporada</h5>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/solo.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">SOLO LEVELING CONFIRMA ADIAMENTO PARA 2024</h4>
+                        <h5 class="card-subtitle">O anime estrearia ainda este ano</h5>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/bungo.jpe">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">BUNGOU STRAY DOGS TERÁ UMA QUINTA TEMPORADA</h4>
+                        <h5 class="card-subtitle">A continuação chega em julho</h5>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/clover.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">BLACK CLOVER GANHA NOVO TRAILER PARA SEU FILME</h4>
+                        <h5 class="card-subtitle">O longa chega em junho</h5>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div>
+                        <img class="w-100" src="./imagens/spy.jpg">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">SPY X FAMILY JÁ TEM PREVISÃO DE ESTREIA DE SUA SEGUNDA TEMPORADA E FILME</h4>
+                        <h5 class="card-subtitle">Os dois chegam ainda este ano</h5>
+                    </div>
+                    <div class="botao">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exemplo-modal" type="button">Leia Mais</button>
+                    </div>
+                    <div class="card-footer">
+                        Postado em <time>21/05/2023 às 14:30</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Site em manutenção</h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Atualmente o site se encontra em manutenção, portanto algumas funções podem não funcionar.
+                    </p>
+                    <p>
+                        Retornaremos em Breve!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Animes 2.0 - Todos os direitos reservados - 2023
+            </p>
+        </div>
+    </footer>
+    
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
